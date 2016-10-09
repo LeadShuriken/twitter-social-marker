@@ -1,0 +1,1172 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Sep 25, 2015, 10:04:16 PM
+    Author     : Deian
+*/
+li {
+    margin-top: 1em;
+    list-style: none;
+}
+
+* {
+    outline: 0;
+}
+
+body {
+    background: #6C6D6F;
+    height: 100%;
+    width: 100%;
+}
+
+.comment_body .comment_body_data .last_comment {
+    position: relative;
+    font-family:"PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size-adjust:0.5;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 75%;
+    color: #4B4B4B;
+    text-align: 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -webkit-left;
+    width: 16em;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    float: left;
+    clear: both;
+    width: 96%;
+    height: -5%;
+    margin-bottom: 2.4%;
+    margin-top: 1.4%;
+    margin-left: 3.5%;
+    overflow: hidden;
+}
+
+.comment_body_replies .comment_response_holder .comment_response {
+
+    font-family:"PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size-adjust: 0.5;
+    font-weight: bold;
+    font-style:italic;
+    font-size: 1em;
+    color: grey;
+    display: inline-block;
+    clear: both;
+    float: left;
+
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color: white;
+    background-color: -moz-field;
+
+    border: 1px solid #A2A1A1;
+    border-radius: 2px;
+    
+    margin-left: 3.5%;
+    box-shadow: 1px 1px 1px 0 lightgray inset;
+
+    padding-left: 2%;
+    min-height: 5em;
+    min-width: 94%;
+    
+font-size: 58%;      color: gray;      margin-bottom: 2em;}
+
+.comment_body_replies .comment_response_holder .comment_response:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.post {
+    position: absolute;
+    width: 40em;
+    background-color: white;
+    /*        background-image: url("../assets/img/videoPopup.png");
+            background-color: rgba(0,0,0,.5);*/
+    border-radius: 0.5em;
+}
+
+.arrow-up-1 {
+    width: 0%;
+    height: 0%;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0.4em solid #B0B0B0;
+    left: -9.6em;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
+
+.arrow-up-2 {
+    width: 0%;
+    height: 0%;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0.4em solid #B0B0B0;
+    left: -5.9em;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
+
+.arrow-up-3 {
+    width: 0%;
+    height: 0%;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0.4em solid #B0B0B0;
+    left: -2em;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
+
+.top_half {
+    position: relative;
+    clear: both;
+    width: 100%;
+    padding: 0px;
+    display: inline-block;
+    clear: both;
+}
+
+.top_half_main {
+    position: relative;
+    display: inline-block;
+    clear: both;
+    float: left;
+    height: auto;
+    width: 94%;
+    padding: 3% 2.5% 3% 3%;
+}
+
+.post_main_divider {
+    border: none;
+    color: #D8D8D8;/* old IE */
+    background-color: #D8D8D8;/* Modern Browsers */
+    position: relative;
+    float: left;
+    height: 0.09em;
+    width: 97.3%;
+    z-index: 1;
+    margin-bottom: 0em;
+    margin-top: 0.6em;
+}
+
+.bottom_half {
+    position: relative;
+    height: 40%;
+    width: 100%;
+    bottom: -47%;
+    display: inline-block;
+    clear: both;
+    margin-bottom: 1%;
+}
+
+.bottom_half_main {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 0% 2.5% 3% 3%;
+}
+
+.comment_placeholder {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.comment_body{
+    position: relative;
+    display: inline-block;
+    clear: both;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    margin-top: 1.5em;
+}
+
+.comment_body .comment_body_data {
+    position: relative;
+    display: inline-block;
+    clear: both;
+    margin-top: 0.2%;
+    margin-bottom: 0em;
+    height: auto;
+    width: 99%;
+    float: left;
+}
+
+.comment_body .comment_body_data .light_grey_skirt {
+    position: absolute;
+    float: left;
+    width: 0.7%;
+    height: 100%;
+    z-index: 1;
+    background-color: #DCDCDC;
+}
+
+.post_comments_main_divider {
+    border: none;
+    color: grey;
+    background-color: grey;
+    position: absolute;
+    float: left;
+    height: 0.08em;
+    width: 100%;
+    color: black;
+    background-color: #DCDCDC;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    z-index: 1;
+    bottom: 0em;
+}
+
+.comment_body_replies {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    float:right;
+    margin-top: 0%;
+    margin-bottom: -6em;
+}
+
+#post_comment_input {
+    font-family: "PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50%;
+    color: dimgrey;
+    display: inline-block;
+    clear: both;
+    float: left;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    background-color: white;
+    background-color: 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -moz-field;
+    border: 1px solid darkgray;
+    border-radius: 0.2em;
+    margin-top: 3.5%;
+    box-shadow: 1px 1px 1px 0 lightgray inset;
+    padding-left: 2%;
+    min-height: 5em;
+    min-width: 98%;
+    /* opacity: 0.8; */
+}
+
+#post_comment_input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.reply_selector {
+    font-family:"PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size-adjust:0.5;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 50%;
+    color: gray;
+    min-width: 5.2em;
+    margin-bottom: 1%;
+}
+
+.comment_body .comment_body_replies .comment_reply{
+    display: inline-block;
+    float: left;
+    width: 7.5%;
+
+    margin-top: 1.1%;
+    margin-left: 3.5%;
+}
+
+.comment_body .comment_body_replies .comment_photo {
+    display: inline-block;
+    float: left;
+    width: 5%;
+    margin-top: 1.1%;
+    margin-left: 4%;
+}
+
+.comment_body_replies .comment_feedback {
+
+    display: inline-block;
+    float: left;
+    width: 8%;
+    margin-top: 1.1%;
+    margin-left: 2%;
+}
+
+.reply_selector:hover {
+    color: #575757;
+    cursor:pointer;
+}
+
+.comment_body_replies .comment_response_holder {
+    width: 100%;
+    height: auto;
+}
+
+.comment_body_replies .dark_grey_skirt {
+    position: relative;
+    float: left;
+    width: 0.7%;
+    height: auto;
+    background-color: #808080;
+    top: -5.8em;
+    z-index: 0;
+}
+
+div.top_half_main #delete_button {
+    text-align: center;
+    font-family:"PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size-adjust: 0.5;
+    font-size: 50%;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    background-color: #ED6376;
+    border-radius: 0.3em;
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding: 0.3em;
+    width: 9%;
+    overflow: hidden;
+    height: 2%;
+}
+
+._comment_reply {
+    position: relative;
+    background-color: white;
+    border: none;
+    clear: both;
+    text-decoration: none;
+    padding-left: 2em;
+    top: 1em;
+}
+
+.comment_replies {
+    text-align: center;
+    font-family: "PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size-adjust:0.5;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50%;
+    color: white;
+    background-color: #575757;
+    border-radius: 0.3em;
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 7.4%;
+    padding: 0.3em;
+    margin-right: 0.6%;
+    overflow: hidden;
+}
+
+div.top_half_main #delete_button:hover {
+    background-color: #EF0021;
+    box-shadow: .1em .1em .05em #888888;
+    cursor:pointer;
+}
+
+div.top_half_main #edit_button {
+    text-align: center;
+    font-family: "PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size-adjust:0.5;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50%;
+    color: white;
+    background-color: #575757;
+    border-radius: 0.3em;
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 7.4%;
+    padding: 0.3em;
+    margin-right: 0.6%;
+    overflow: hidden;
+}
+
+div.top_half_main #edit_button:hover {
+    background-color: black;
+    box-shadow: .1em .1em .05em #888888;
+    cursor:pointer;
+}
+
+._comment_reply_smaller {
+     text-align: 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     -webkit-left;
+     font-family: "PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+     font-size-adjust:0.5;
+     font-size: 55%;
+     position: relative;
+     float: left;
+     width: 96%;
+     left: 4.5em;
+     padding: 0.3em;
+     margin-right: 0.6%;
+     overflow: hidden;
+     top: -1.5em;
+     font-weight: normal;
+     font-style: normal;
+     color: #4B4B4B;
+}

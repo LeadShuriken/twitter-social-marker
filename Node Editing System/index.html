@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- Frameworks -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+        <!-- Handlers -->
+        <script type="text/javascript" src="rendering_handling.js"></script>
+        <script type="text/javascript" src="builder_handling.js"></script>
+        <script type="text/javascript" src="draw_shapes.js"></script>
+        <script type="text/javascript" src="node_system.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+
+    </head>
+    <body onload="main();">
+        <div class="node_sk">
+            <div class="builder_holder">
+                <div class="builder_ui">
+                    <div class="nexa ui_button"></div>
+                    <div class="circle ui_button"></div>
+                    <div class="square ui_button"></div>
+                    <div class="base ui_button">
+                        <div></div>
+                    </div>
+                </div>
+                <canvas class="element_builder"></canvas>
+                <div class="builder_element_holder"></div>
+            </div>
+
+            <div class="ui_holder">
+                <div class="ui_handler">
+                    <div class="node_element_holder"></div>
+                    <canvas class="wire_traces"></canvas>
+                    <canvas class="node_wires_holder"></canvas>
+                </div>
+            </div>
+            <button class="add_node_button" onclick="add_element_to_playpen()" disabled="">ADD NODE</button>
+        </div>
+    </body>
+</html>

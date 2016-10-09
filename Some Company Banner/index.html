@@ -1,0 +1,100 @@
+<!-- HTML 5 Ad Template from DoubleClick by Google -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- Studio Enabler Required -->
+        <script src="http://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>	
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <style type="text/css">
+            #loading_dc{
+                width:100%;
+                height:100%;
+                background-color:white;
+                z-index:10;
+            }
+            #loading_image_dc{
+                position:absolute;
+                left:50%;
+                margin-left:-15px;
+                top:50%;
+                margin-top:-15px;	
+            }
+            #container_dc{display:none;z-index:20}
+        </style>
+
+        <script language="javascript">
+            //Initialize Enabler
+            if (Enabler.isInitialized()) {
+                init();
+            } else {
+                Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+            }
+            //Run when Enabler is ready
+            function init() {
+                //politeInit();
+                //Load in Javascript
+
+                if (Enabler.isPageLoaded()) {
+                    politeInit();
+                } else {
+                    Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+                }
+            }
+
+            function politeInit() {
+                
+                //Load in Javascript
+                var extJavascript = document.createElement('script');
+                extJavascript.setAttribute('type', 'text/javascript');
+                extJavascript.setAttribute('src', Enabler.getUrl('js/StangaOne_Banner.js'));
+                document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+                //Load in CSS
+                var extCSS = document.createElement('link');
+                extCSS.setAttribute("rel", "stylesheet");
+                extCSS.setAttribute("type", "text/css");
+                extCSS.setAttribute("href", Enabler.getUrl("css/StangaOne_Banner.css"));
+                document.getElementsByTagName("head")[0].appendChild(extCSS);
+                document.getElementById("container_dc").style.opacity = 1;
+                document.getElementById("loading_image_dc").style.opacity = 0;
+                document.getElementById("container_dc").style.display = "block";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="loading_dc">
+            <div id="loading_image_dc">
+                <img src="img/loading.gif">
+            </div>    
+        </div>
+        <div id="container_dc">
+            <div id="content_dc">
+                <div class="frame_1 fade-out timeout_3000">
+                    <img class="frame_1_1 fade-in-up timeout_500"/>
+                </div>  
+                <div class="frame_2 fade-out timeout_7000">
+                    <img class="frame_2_1 fade-in-up timeout_3500"/> 
+                    <img class="frame_2_2 fade-in-up timeout_4000"/>
+                    <img class="frame_2_3 fade-in-up timeout_4500"/>
+                </div>
+                <div class="frame_3 fade-out timeout_10500">
+                    <img class="frame_3_1 fade-in-up timeout_7500"/> 
+                    <img class="frame_3_2 fade-in-up timeout_8000"/>
+                </div>
+                <div class="frame_4 fade-out timeout_14500">
+                    <img class="frame_4_1 fade-in-up timeout_11000"/> 
+                    <img class="frame_4_2 arrow-transform timeout_11500"/>
+                </div>
+                <img class="gsk_logo" src="img/gsk_logo.png">
+                <img class="maxi_logo" src="img/maxi_logo.png">
+                <img class="background" src="img/background.jpg"/>
+            </div>
+            <button id="background_exit_dc"></button>
+        </div>
+    </body>
+</html>
+

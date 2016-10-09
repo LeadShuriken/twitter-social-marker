@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 26, 2015, 8:21:48 PM
+    Author     : Deian
+*/
+
+.user_identity_badge{
+    position: relative;
+    height: auto;
+    width: 40%;
+    margin-bottom: 0.5%;
+    display: inline-block;
+}
+
+.user_identity_badge div:nth-child(1) {
+    float: left;
+    clear: left;
+    background-image: url("../assets/img/691805390.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: 3%;
+    border-radius: 100%;
+    position: relative;
+    border: 1px solid gray;
+}
+
+.user_identity_badge div:nth-child(2) {
+    float: left;
+    font-family: 'Merriweather Bold', 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size-adjust:0.5;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 1.3em;
+    color: #219CB9;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin-top: 2%;
+    margin-left: 5.5%;
+    cursor: pointer;
+}
+
+.user_identity_badge div:nth-child(3) {
+    font-family:"PT Sans Bold", 'Arial Unicode', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size-adjust:0.5;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 0.6em;
+    color: gray;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-left: 6%;
+    width: 60%;
+}
+
+._photo_fix {
+    height: 2em !important;
+    width: 2em !important;}
+
+._badge_fix {
+    width: 28% !important;;
+}
+
+._name_fix {
+    font-size: 0.8em !important;
+}
+
+._name_fi:hover {
+    background-color: #EF0021;
+    box-shadow: .1em .1em .05em #888888;
+    cursor:pointer;
+}
+
+._time_fix {
+    font-size: 0.35em !important;
+}
