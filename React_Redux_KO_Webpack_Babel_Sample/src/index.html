@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React Webpack</title>
+    <!--Frameworks-->
+    <script src="frameworks/knockout-3.3.0.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="js/bundle.min.js"></script>
+    <div class="post">
+        <div class="top_half">
+            <div class="top_half_main">
+                <div class="carret">
+                    <div id="player"></div>
+                    <div id="player_background" data-bind="visible: !(youTubeApiObject().showPlayerControllers())">
+                        <input type="url" maxlength="100" id="youtube_url" value="" placeholder="Place your YouTube link." data-bind="textInput : youtubeURL, event: {keypress: initVideo}" />
+                    </div>
+                    <div id="play_pause" data-bind="visible: youTubeApiObject().showPlayerControllers, event: {mousedown: youTubeApiObject().playPause}"></div>
+                    <div id="volume_1" data-bind="visible: youTubeApiObject().showPlayerControllers,
+                                                      style:{backgroundImage: 'url('+ youTubeApiObject().volumeImage() + ')' },
+                                                      click: youTubeApiObject().muteToggle" />
+                    <input type="range" id="volume_2" step="1" min="0" max="10" data-bind="value : youTubeApiObject().volumeValue,
+                                                                                                   visible: youTubeApiObject().showVolume,
+                                                                                                   hoverTargetId: 'volume_1',
+                                                                                                   stopBubble: true" />
+                </div>
+                <div id="time_line" class="ie firefox chrome" data-bind="visible: youTubeApiObject().showPlayerControllers">
+                    <input type="range" name="fader" id="fader" step="0.5" min="0" max="100" data-bind=" value: youTubeApiObject().seekValue,
+                                                                                                                 click: youTubeApiObject().seekTo,
+                                                                                                                 event:{ mousedown: youTubeApiObject().pause , mouseup: youTubeApiObject().play}" />
+                </div>
+                <div id="lenght_counter" data-bind="visible: youTubeApiObject().showPlayerControllers,
+                                                            text: youTubeApiObject().elapsed"></div>
+            </div>
+            <div class="like_button">LIKE</div>
+            <div class="share_button">SHARE</div>
+            <div id="delete_button" data-bind="click: deleteVideo">DELETE</div>
+            <div id="edit_button" data-bind="click: youTubeApiObject().editVideo">EDIT</div>
+            <input id="post_comment_input" maxlength="400" type="text" value="" placeholder="comment..." data-bind="textInput : tempInput, event: {keypress: addComment}" />
+        </div>
+        <hr class="post_main_divider">
+    </div>
+    <div class="bottom_half">
+        <div class="bottom_half_main">
+            <div class="comment_placeholder" data-bind=" foreach: comments">
+                <div class="comment_body">
+                    <div class="user_identity_badge">
+                        <div class="user_identity_photo" data-bind="style: { backgroundImage: 'url(\'' + _user_photo + '\')' }"></div>
+                        <div class="user_identity_name" data-bind="text: _user_name"></div>
+                        <div class="user_identity_time" data-bind="text: comment_time"></div>
+                    </div>
+                    <div class="comment_body_data">
+                        <hr class="post_comments_main_divider">
+                        <div class="last_comment">
+                            <span data-bind="text: comment_body"></span>
+                        </div>
+                        <div class="like_button">LIKE</div>
+                        <div class="share_button">SHARE</div>
+                        <div class="comment_button" data-bind="click: show_comments">COMMENT</div>
+                        <div class="report_button">REPORT</div>
+                        <div class="light_grey_skirt"></div>
+                    </div>
+                    <div class="comment_body_replies" data-bind="style: { display: to_comment() }">
+                        <div class="comment_reply reply_selector" data-bind="click: change_comment_state">COMMENT</div>
+                        <div class="comment_photo reply_selector" data-bind="click: change_comment_state">PHOTO</div>
+                        <div class="comment_feedback reply_selector" data-bind="click: change_comment_state">FEEDBACK</div>
+                        <div class="comment_response_holder">
+                            <div class="arrow-up-1" data-bind="visible: comment_reply() == 'Reply...'"></div>
+                            <div class="arrow-up-2" data-bind="visible: comment_reply() == 'Photo...'"></div>
+                            <div class="arrow-up-3" data-bind="visible: comment_reply() == 'Feedback...'"></div>
+                            <input type="text" maxlength="400" class="comment_response" data-bind="placeholder: comment_reply, textInput : tempInput, event: {keypress: addComment_reply}" />
+                        </div>
+                        <div class="dark_grey_skirt"></div>
+                    </div>
+                    <ul class="_comment_reply" data-bind="foreach: comment_replies">
+                        <li>
+                            <div class="user_identity_badge _badge_fix">
+                                <div class="user_identity_photo _photo_fix" data-bind="style: { backgroundImage: 'url(\'' + user_photo + '\')' }"></div>
+                                <div class="user_identity_name _name_fix" data-bind="text: user_name, click: $parent.reply_comment_reply"></div>
+                                <div class="user_identity_time _time_fix" data-bind="text: comment_time"></div>
+                            </div>
+                            <span class="_comment_reply_smaller">
+                                        <span style="color:#219CB9 !important; cursor: pointer" data-bind="text: _reply_to_whom , click: $parent.reply_comment_reply"></span>
+                            <span data-bind="text: _comment_reply_text"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
