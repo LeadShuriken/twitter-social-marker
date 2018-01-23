@@ -23,3 +23,9 @@ This repo uses code from:
 
 * The Champ (https://thechamplord.wordpress.com)
 * Tim Dot (https://github.com/timdown)
+
+### Instalation
+
+This repo contains the js you need to include in you text rich page. Mind you that the functionality now is that handling is attempted for all element. IF you want to exclude text make sure it has the "not-this-text" class or is a child of an element with it.
+
+Extra explanations are given in code.
