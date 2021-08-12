@@ -1,4 +1,4 @@
-# Single File Twitter post integration
+# Single File Twitter Post Integration
 Description:
 > This is a small project to recreate
 > the outstanding functionality from
